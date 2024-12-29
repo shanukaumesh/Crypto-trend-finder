@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select, input, button {
+  margin: 10px;
+  padding: 5px;
+}

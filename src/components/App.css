@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .controls label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .chart {
+    margin: 20px 0;
+  }
+  
+  .signals {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .signals li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .buy-signal {
+    background-color: #d4fdd4;
+  }
+  
+  .sell-signal {
+    background-color: #fdd4d4;
+  }
+  
