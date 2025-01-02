@@ -44,10 +44,141 @@
   }
 }
 
-.card {
-  padding: 2em;
+/* Light Theme (default) */
+.App.light {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.read-the-docs {
-  color: #888;
+/* Dark Theme */
+.App.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* SignalDashboard Styling */
+.SignalDashboard {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Chart Background in Dark Mode */
+.App.dark .SignalDashboard {
+  background-color: #1e1e1e; /* Dark chart background */
+  color: #ffffff; /* Text visible in dark mode */
+}
+
+/* Button Styling */
+button.theme-toggle {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  border-radius: 50%;
+  transition: color 0.3s ease;
+}
+
+button.theme-toggle:hover {
+  color: #ffd700; /* Golden yellow on hover */
+}
+
+/* Additional Styling for the Dashboard */
+.dashboard {
+  padding: 20px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.controls {
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.controls label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.controls select {
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: inherit;
+  color: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.controls select:focus {
+  border-color: #ffd700; /* Golden yellow on focus */
+}
+
+.chart {
+  margin-top: 20px;
+}
+
+.signals {
+  list-style-type: none;
+  padding: 0;
+}
+
+.signals li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+}
+
+.signals li.buy-signal {
+  background-color: #28a745; /* Green background for buy signals */
+}
+
+.signals li.sell-signal {
+  background-color: #dc3545; /* Red background for sell signals */
+}
+
+.signals li:hover {
+  background-color: #ddd; /* Lighter background on hover */
+}
+
+/* Dark Mode Overrides */
+.App.dark .controls select {
+  background-color: #333;
+  color: #fff;
+  border-color: #666;
+}
+
+.App.dark .controls select:focus {
+  border-color: #ffd700;
+}
+
+.App.dark .signals li {
+  background-color: #2c2c2c;
+}
+
+.App.dark .signals li.buy-signal {
+  background-color: #1e7e34; /* Darker green for buy signals in dark mode */
+}
+
+.App.dark .signals li.sell-signal {
+  background-color: #8b0000; /* Darker red for sell signals in dark mode */
+}
+
+.App.dark .signals li:hover {
+  background-color: #444; /* Darker hover effect */
+}
+
+/* Dark Mode Background for Dashboard */
+.App.dark .dashboard {
+  background-color: #1e1e1e; /* Dark background for dashboard */
+}
+
+/* Dark Mode Text Color for Dashboard */
+.App.dark .controls label,
+.App.dark h3,
+.App.dark h4 {
+  color: #ffffff;
 }
