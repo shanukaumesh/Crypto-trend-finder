@@ -8,7 +8,8 @@ This project is a Crypto Signal Dashboard built with React and Vite. It fetches 
 - Calculates EMA and RSI indicators  
 - Generates buy/sell signals based on trend analysis  
 - Displays candlestick charts using ApexCharts  
-- Dynamic leverage calculation based on market conditions  
+- Dynamic leverage calculation based on market conditions
+- Dark mode and light theme
 
 ## Getting Started
 
